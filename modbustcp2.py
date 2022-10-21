@@ -245,10 +245,13 @@ def dojob02():
     #Sendweather('nJZOWiKj6IDQQNGn2nTK','COM3')
     time.sleep(5)
 
+def dojob03():
+    SendCharg("oHdFlje4ZHbBTgrrueCA",'192.168.7.100')
+    time.sleep(1)
+
 schedule.every(2).minutes.do(dojob01)
-
 schedule.every(2).minutes.do(dojob02)
-
+schedule.every(15).seconds.do(dojob03)
 
 while True:
     #print (getMainPower('192.168.7.100'))
