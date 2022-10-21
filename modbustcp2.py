@@ -241,8 +241,8 @@ def dojob01():
     time.sleep(5)
 
 def dojob02():
-    #Sendweather('nJZOWiKj6IDQQNGn2nTK','/dev/ttyS1')
-    Sendweather('nJZOWiKj6IDQQNGn2nTK','COM3')
+    Sendweather('nJZOWiKj6IDQQNGn2nTK','/dev/ttyS1')
+    #Sendweather('nJZOWiKj6IDQQNGn2nTK','COM3')
     time.sleep(5)
 
 schedule.every(2).minutes.do(dojob01)
